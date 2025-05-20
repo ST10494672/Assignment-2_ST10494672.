@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 class QuizActivity : AppCompatActivity() {
 
-    private val questions = arrayOf(
+     val questions = arrayOf(
         "Were parts of the bible originally written in Greek.",
         "Did the Dead Sea Scrolls help confirm the accuracy of Old Testament Texts.",
         "Was Paul one of the main writers of the New Testament Letters.",
@@ -16,10 +16,10 @@ class QuizActivity : AppCompatActivity() {
         "Was the Bible translated into English before it was written in Hebrew."
     )
 
-    private val answers = arrayOf(true, true, true, true, false)
+     val answers = arrayOf(true, true, true, true, false)
 
-    private var currentQuestionIndex = 0
-    private var score = 0
+     var currentQuestionIndex = 0
+     var score = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,27 +43,29 @@ class QuizActivity : AppCompatActivity() {
         }
     }
 
-    private fun checkAnswer(
+        fun checkAnswer(
         userAnswer: Boolean,
         questionView: TextView,
         trueBtn: Button,
         falseBtn: Button
     ) {
-        // Check if correct
+        // Check if it is correct
         if (userAnswer == answers[currentQuestionIndex]) {
             score++
         }
 
-        // Move to next question
+        // Move to next question/page
         currentQuestionIndex++
 
         // Check if there are more questions
         if (currentQuestionIndex < questions.size) {
+
             // Show next question
             questionView.text = questions[currentQuestionIndex]
             trueBtn.isEnabled = true
             falseBtn.isEnabled = true
         } else {
+
             // Go to ScoreActivity
             val intent = Intent(this, ScoreActivity::class.java).apply {
                 putExtra("USER_SCORE", score)

@@ -8,7 +8,7 @@ import android.widget.Button
 class ReviewActivity : AppCompatActivity() {
 
     // Array of flashcard questions
-    private val questions = arrayOf(
+     val questions = arrayOf(
         "Were parts of the bible originally written in Greek.",
         "Did the Dead Sea Scrolls help confirm the accuracy of Old Testament Texts.",
         "Was Paul one of the main writers of the New Testament Letters.",
@@ -17,7 +17,7 @@ class ReviewActivity : AppCompatActivity() {
     )
 
     // Array of corresponding answers (true/false)
-    private val answers = arrayOf(true, true, true, true, false)
+     val answers = arrayOf(true, true, true, true, false)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,6 +37,7 @@ class ReviewActivity : AppCompatActivity() {
 
         // Set click listener for Back button
         backButton.setOnClickListener {
+
             // Go back to score screen
             onBackPressed()
         }

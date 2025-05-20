@@ -9,22 +9,22 @@ import android.content.Intent
 class MainActivity : AppCompatActivity() {
 
     // Array of flashcard questions
-    private val questions = arrayOf(
-        "Nelson Mandela became South Africa's first black president in 1994.",
-        "The Berlin Wall fell in 1989.",
-        "World War II lasted from 1939 to 1945.",
-        "The United States landed on the moon in 1969.",
-        "The French Revolution began in 1789."
+     val questions = arrayOf(
+        "Were parts of the bible originally written in Greek.",
+        "Did the Dead Sea Scrolls help confirm the accuracy of Old Testament Texts.",
+        "Was Paul one of the main writers of the New Testament Letters.",
+        "Did early church councils help define Christian beliefs.",
+        "Was the Bible translated into English before it was written in Hebrew."
     )
 
     // Array of corresponding answers (true/false)
-    private val answers = arrayOf(true, true, true, true, true)
+    val answers = arrayOf(true, true, true, true, true)
 
     // Current question index
-    private var currentQuestionIndex = 0
+     var currentQuestionIndex = 0
 
     // User score
-    private var score = 0
+     var score = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         // Set up start button click listener
         val startButton = findViewById<Button>(R.id.btn_start)
         startButton.setOnClickListener {
+
             // Launch the quiz activity when start is clicked
             val intent = Intent(this, QuizActivity::class.java)
             startActivity(intent)
