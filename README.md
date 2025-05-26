@@ -107,5 +107,8 @@ Automatically advances to next question
 At end of quiz, user is taken to ScoreActivity
 
 From there, user can go to ReviewActivity to view all correct answers
+## Screenshots of the app 
+![score page ](https://github.com/user-attachments/assets/d3bdabbf-0ba1-4145-84eb-0e70a940fc69)
+
 
 
