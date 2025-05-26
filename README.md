@@ -108,7 +108,13 @@ At end of quiz, user is taken to ScoreActivity
 
 From there, user can go to ReviewActivity to view all correct answers
 ## Screenshots of the app 
-![score page ](https://github.com/user-attachments/assets/d3bdabbf-0ba1-4145-84eb-0e70a940fc69)
+![front page](https://github.com/user-attachments/assets/2e276d58-8c37-46f7-85da-6c959be3ed45)
+![question 1 page ](https://github.com/user-attachments/assets/43258382-958e-4b53-8f56-7341d9a5ac60)
+![score page ](https://github.com/user-attachments/assets/6642f03b-90e9-4738-8656-e7850b969175)
+![review page](https://github.com/user-attachments/assets/eb61d292-428c-493d-9a89-c328c7c080fc)
+## YT link for app 
+https://youtu.be/UQ_g1hYiRDI
+
 
 
 
