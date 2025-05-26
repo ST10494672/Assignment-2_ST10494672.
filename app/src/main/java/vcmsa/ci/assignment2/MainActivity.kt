@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         "Was the Bible translated into English before it was written in Hebrew."
     )
 
-    // Array of corresponding answers (true/false)
+    // Array of answers (true/false)
     val answers = arrayOf(true, true, true, true, true)
 
     // Current question index

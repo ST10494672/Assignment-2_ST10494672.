@@ -16,7 +16,7 @@ class ReviewActivity : AppCompatActivity() {
         "Was the Bible translated into English before it was written in Hebrew."
     )
 
-    // Array of corresponding answers (true/false)
+    // Array of answers (true/false)
      val answers = arrayOf(true, true, true, true, false)
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,7 +26,7 @@ class ReviewActivity : AppCompatActivity() {
         val reviewContent = findViewById<TextView>(R.id.review_content)
         val backButton = findViewById<Button>(R.id.back_button)
 
-        // Build the review page with all questions and answers
+        // The review page with all questions and answers
         val reviewText = StringBuilder("Review Your Answers:\n\n")
         for (i in questions.indices) {
             reviewText.append("${i + 1}. ${questions[i]}\n")
